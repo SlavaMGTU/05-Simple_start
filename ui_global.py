@@ -7,7 +7,7 @@ from typing import Optional
 
 
 # Constants and variables
-DB_PATH = 'db_dev/sqlite_dev/sqlite_dev'
+DB_PATH = './db_dev/sqlite_dev/sqlite_dev'
 db = Database()
 
 
