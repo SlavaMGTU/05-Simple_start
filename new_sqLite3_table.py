@@ -4,10 +4,11 @@ con = sqlite3.connect(r'./db/db.db')
 
 
 print ("Opened database successfully")
-con.execute('''CREATE TABLE db
-      (ID INT PRIMARY KEY     NOT NULL,
-       barcode           TEXT    NOT NULL,
-       name           TEXT    NOT NULL,
-       qty            INT     NOT NULL;''')
+cur=con.cursor()
+cur.execute('CREATE TABLE IF NOT EXISTS db(barcode TEXT,'
+                                          'name TEXT,'
+                                          'qty INT)')
+con.commit()
 print ("Table created successfully")
+cur.close()
 con.close()
