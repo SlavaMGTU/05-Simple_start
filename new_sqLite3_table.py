@@ -1,6 +1,7 @@
 import sqlite3
 
-con = sqlite3.connect(r'./db/db.db')
+#con = sqlite3.connect(r'./db/db.db')
+con = sqlite3.connect(r'D:\work\python\22-08-15_SimpleUI_test\05-Simple_start\db_dev\sqlite_dev\sqlite_dev\sqlite_dev')
 
 
 print ("Opened database successfully")

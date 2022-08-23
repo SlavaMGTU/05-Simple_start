@@ -7,7 +7,9 @@ from typing import Optional
 
 
 # Constants and variables
-DB_PATH = 'db'
+#DB_PATH = './db'
+DB_PATH = 'db_dev\\sqlite_dev\\sqlite_dev\\sqlite_dev.db'
+#DB_PATH = 'sqlite_dev.db'
 db = Database()
 
 
@@ -46,3 +48,6 @@ def add_table_entries(data: dict) -> None:
             else:
                 table(**record_data)
 
+
+if __name__ == '__main__':
+    setup_db()
